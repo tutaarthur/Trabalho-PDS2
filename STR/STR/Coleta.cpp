@@ -16,8 +16,10 @@ Coleta::Coleta(std::string data, Usuario *receptor, Usuario *doador, PontoDeCole
     this->receptor = receptor;
     this->doador = doador;
     this->ponto = ponto;
-    for (int i=0; i<residuos.size(); i++)
+    for (int i=0; i<residuos.size(); i++) {
+        (*residuos[i])->addColeta();
         this->residuos.push_back(residuos[i]);
+    }
 }
 bool Coleta::getColetado() {
     return this->coletado;
@@ -47,5 +49,5 @@ PontoDeColeta* Coleta::getPonto() {
     return this->ponto;
 }
 Coleta::~Coleta(){
-    residuos.clear();
+    this->residuos.clear();
 }

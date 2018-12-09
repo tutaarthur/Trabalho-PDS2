@@ -15,15 +15,8 @@ std::string Usuario::getNome() {
 std::string Usuario::getEndereco() {
     return this->endereco;
 }
-void Usuario::addResiduo() {
-    this->qntResiduos++;
-}
 void Usuario::addColeta() {
     this->qntColetas++;
-}
-void Usuario::removeResiduo() {
-    if(this->qntResiduos > 0)
-        this->qntResiduos --;
 }
 void Usuario::removeColeta() {
     if(this->qntColetas > 0)
@@ -31,9 +24,6 @@ void Usuario::removeColeta() {
 }
 int Usuario::getQntColetas() {
     return this->qntColetas;
-}
-int Usuario::getQntResiduos() {
-    return this->qntResiduos;
 }
 int Usuario::getTipo(){
     return this->tipo;
@@ -52,12 +42,13 @@ void Usuario::setTipo(int tipo){
     else
         throw std::invalid_argument("Tipo Invalido");
 }
-
+Usuario::~Usuario(){
+    
+}
 Usuario::Usuario(std::string nome, std::string endereco, int tipo){
     this->nome = nome;
     this->endereco = endereco;
     this->qntColetas = 0;
-    this->qntResiduos = 0;
     if (tipo == 1 || tipo == 2)
         this->tipo = tipo;
     else

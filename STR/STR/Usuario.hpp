@@ -18,7 +18,6 @@ class Usuario {
         std::string nome;
         int tipo;
         std::string endereco;
-        int qntResiduos;
         int qntColetas;
     
     public:
@@ -26,9 +25,6 @@ class Usuario {
         void addColeta();
         void removeColeta();
         int getQntColetas();
-        void addResiduo();
-        void removeResiduo();
-        int getQntResiduos();
         void setEndereco(std::string endereco);
         void setNome(std::string nome);
         void setTipo(int tipo);

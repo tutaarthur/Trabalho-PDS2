@@ -14,6 +14,7 @@
 		DFE64D5D21BD5EE500444C8B /* PontoDeColeta.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DFE64D5B21BD5EE500444C8B /* PontoDeColeta.cpp */; };
 		DFE64D6021BD5EF800444C8B /* Sistema.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DFE64D5E21BD5EF800444C8B /* Sistema.cpp */; };
 		DFE64D6321BD662600444C8B /* Coleta.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DFE64D6121BD662600444C8B /* Coleta.cpp */; };
+		DFE64D6521BDA2DA00444C8B /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DFE64D6421BDA2DA00444C8B /* test.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +43,8 @@
 		DFE64D5F21BD5EF800444C8B /* Sistema.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Sistema.hpp; sourceTree = "<group>"; };
 		DFE64D6121BD662600444C8B /* Coleta.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Coleta.cpp; sourceTree = "<group>"; };
 		DFE64D6221BD662600444C8B /* Coleta.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Coleta.hpp; sourceTree = "<group>"; };
+		DFE64D6421BDA2DA00444C8B /* test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
+		DFE64D6621BDA32D00444C8B /* doctest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doctest.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,7 @@
 		DFE64D4B21BD5D1900444C8B /* STR */ = {
 			isa = PBXGroup;
 			children = (
+				DFE64D6621BDA32D00444C8B /* doctest.h */,
 				DFE64D4C21BD5D1900444C8B /* main.cpp */,
 				DFE64D5521BD5EB100444C8B /* Usuario.cpp */,
 				DFE64D5621BD5EB100444C8B /* Usuario.hpp */,
@@ -86,6 +90,7 @@
 				DFE64D5F21BD5EF800444C8B /* Sistema.hpp */,
 				DFE64D6121BD662600444C8B /* Coleta.cpp */,
 				DFE64D6221BD662600444C8B /* Coleta.hpp */,
+				DFE64D6421BDA2DA00444C8B /* test.cpp */,
 			);
 			path = STR;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFE64D6021BD5EF800444C8B /* Sistema.cpp in Sources */,
+				DFE64D6521BDA2DA00444C8B /* test.cpp in Sources */,
 				DFE64D5D21BD5EE500444C8B /* PontoDeColeta.cpp in Sources */,
 				DFE64D5421BD5E7F00444C8B /* Makefile in Sources */,
 				DFE64D4D21BD5D1900444C8B /* main.cpp in Sources */,

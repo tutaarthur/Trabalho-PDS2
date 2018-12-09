@@ -14,19 +14,18 @@
 class Residuo {
     private:
         int tipo;
-        std::string nome;
-        Usuario *dono;
+        std::string nome, descricao;
         int qntColeta;
     public:
-        Usuario* getDono();
         int getTipo();
         void setTipo(int tipo);
-        void setDono(Usuario* dono);
         std::string getNome();
+        std::string getDescricao();
+        void setDescricao(std::string descricao);
         void setNome(std::string nome);
         int getQntColeta();
         void addColeta();
         void removeColeta();
-        Residuo(std::string nome, int tipo, Usuario* dono);
+        Residuo(std::string nome, int tipo, std::string descricao);
 };
 #endif /* Residuo_hpp */
